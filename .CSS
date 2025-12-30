@@ -1,0 +1,134 @@
+/* ======================
+   GLOBAL
+====================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+a, h2, h3 {
+  color: #00ff88;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #111;
+  border-bottom: 1px solid #222;
+}
+
+nav a {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #00ff88;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a[role="button"] {
+  border: 1px solid #00ff88;
+  background: transparent;
+  color: #00ff88;
+}
+
+nav a[role="button"]:hover {
+  background: #00ff88;
+  color: #000;
+}
+
+/* Offset anchor */
+section, main {
+  scroll-margin-top: 80px;
+}
+
+/* ======================
+   HERO
+====================== */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* ======================
+   ANIMATION
+====================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======================
+   CARD
+====================== */
+.card {
+  background: #111;
+  border: 1px solid #222;
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0,255,136,0.3);
+}
+
+/* ======================
+   NEON DIVIDER
+====================== */
+.neon-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ff88, transparent);
+  margin: 3rem 0;
+}
+
+/* ======================
+   FORM
+====================== */
+input, textarea {
+  background-color: #222;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+button {
+  background-color: #00ff88;
+  color: #000;
+}
