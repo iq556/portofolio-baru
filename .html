@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aldy Iqbal Syafruddin - Portofolio</title>
+
+  <!-- Pico CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+    }
+
+    nav, footer {
+      background-color: #111;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #222;
+    }
+
+    nav a {
+      color: #00ff88;
+      position: relative;
+      padding: 0.5rem;
+      text-decoration: none;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0%;
+      height: 2px;
+      background: #00ff88;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a[role="button"] {
+      border: 1px solid #00ff88;
+      background: transparent;
+      color: #00ff88;
+    }
+
+    nav a[role="button"]:hover {
+      background: #00ff88;
+      color: #000;
+    }
+
+    a, h2, h3 {
+      color: #00ff88;
+    }
+
+    button {
+      background-color: #00ff88;
+      color: #000;
+    }
+
+    input, textarea {
+      background-color: #222;
+      color: #e0e0e0;
+      border: 1px solid #444;
+    }
+
+    section, main {
+      scroll-margin-top: 80px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Aldy Iqbal Syafruddin</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak" role="button">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- BERANDA -->
+  <main class="container" id="beranda">
+    <div class="grid">
+      <section id="tentang">
+        <hgroup>
+          <h2>Web Developer & Cybersecurity Enthusiast</h2>
+          <h3>Menciptakan website modern dan aman</h3>
+        </hgroup>
+
+        <p>
+          Saya adalah seorang pengembang web dengan ketertarikan tinggi pada dunia
+          keamanan siber dan desain minimalis gelap.
+        </p>
+
+        <figure>
+          <img src="foto/OIP.jpg" alt="Hacker Developer">
+          <figcaption>Hacker Developer</figcaption>
+        </figure>
+
+        <h3>Keahlian</h3>
+        <p>Pengembangan Web • Desain UI/UX • Penetration Testing • Automasi</p>
+
+        <h3>Proyek Unggulan</h3>
+        <ul>
+          <li>Dashboard Keamanan Jaringan</li>
+          <li>Sistem Otentikasi 2FA</li>
+          <li>Website Portofolio Enkripsi</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- KONTAK -->
+  <section id="kontak" aria-label="Kontak">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Hubungi Saya</h2>
+          <h3>Ingin bekerja sama atau diskusi proyek?</h3>
+        </hgroup>
+
+        <form class="grid">
+          <input type="text" placeholder="Mr.Joker" required>
+          <input type="email" placeholder="Mari bekerjasama" required>
+          <button type="submit" onclick="event.preventDefault()">Kirim Pesan</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <small>
+      <a href="#">Privasi</a> • <a href="#">GitHub</a>
+    </small>
+  </footer>
+
+</body>
+</html>
