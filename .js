@@ -1,4 +1,3 @@
-<script>
 const text = "Web Developer & Cybersecurity Enthusiast";
 let i = 0;
 
@@ -10,4 +9,3 @@ function typing() {
   }
 }
 typing();
-</script>
